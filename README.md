@@ -4,7 +4,7 @@ Rails plugin for the attribute - code
 ## Installation
 Include the gem to your Gemfile:
 ```ruby
-gem 'codable', '~> 6.x' # For Rails 6.x
+gem 'codable', '~> 5.x' # For Rails 5.x
 ```
 
 ## Usage
@@ -12,7 +12,7 @@ Include Codable for your model:
 ```ruby
 class Platform < ApplicationRecord
   include Codable
-  self.codable_key = :other # You needn't do this until the attribute is not `code`
+  # self.codable_key = :other # You needn't do this until the attribute is not `code`
 end
 ```
 
