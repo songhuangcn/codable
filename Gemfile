@@ -11,5 +11,6 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
-# To use a debugger
-# gem 'byebug', group: [:development, :test]
+gem 'byebug', '~> 11.0.1'
+gem 'rubocop', '~> 0.81.0'
+gem 'sqlite3', '~> 1.4.2'

@@ -1,4 +1,7 @@
+.ruby-version
+.byebug_history
 .bundle/
+.DS_Store
 log/*.log
 pkg/
 test/dummy/db/*.sqlite3

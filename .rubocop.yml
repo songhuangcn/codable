@@ -1,0 +1,18 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'test/dummy/db/schema.rb'
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+Layout/LineLength:
+  Max: 120
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
