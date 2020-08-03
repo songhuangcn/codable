@@ -1,0 +1,8 @@
+linux:
+  code: linux
+
+macos:
+  code: macos
+
+windows:
+  code: windows

@@ -1,0 +1,7 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  NewCops: enable
+  Exclude:
+    - 'test/dummy/db/schema.rb'
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never

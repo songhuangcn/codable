@@ -1,28 +1,31 @@
 # Codable
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+Rails plugin for the attribute - code
 
 ## Installation
-Add this line to your application's Gemfile:
+Include the gem to your Gemfile:
+```ruby
+gem 'codable', '~> 6.x' # For Rails 6.x
+```
+
+## Usage
+Include Codable for your model:
+```ruby
+class Platform < ApplicationRecord
+  include Codable
+  self.codable_key = :other # You needn't do this until the attribute is not `code`
+end
+```
 
 ```ruby
-gem 'codable'
+Platform.create!([
+  { id: 1, code: 'linux' },
+  { id: 2, code: 'macos' },
+])
+Platform[:linux]        # => #<Platform: 1>
+Platform[:linux].id     # => 1, hit cache this time
+Platform[:linux].linux? # => true, hit cache this time
+Platform[:linux].macos? # => false, hit cache this time
 ```
-
-And then execute:
-```bash
-$ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install codable
-```
-
-## Contributing
-Contribution directions go here.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
