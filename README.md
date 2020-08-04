@@ -1,9 +1,12 @@
 # Codable
 Rails plugin for the attribute - code
 
+![rails-5-x](https://github.com/hdgcs/codable/workflows/rails-5-x/badge.svg)
+
 ## Installation
 Include the gem to your Gemfile:
 ```ruby
+gem 'codable', '~> 6.x' # For Rails 6.x
 gem 'codable', '~> 5.x' # For Rails 5.x
 ```
 
@@ -16,6 +19,7 @@ class Platform < ApplicationRecord
 end
 ```
 
+Test it in Rails Console:
 ```ruby
 Platform.create!([
   { id: 1, code: 'linux' },
